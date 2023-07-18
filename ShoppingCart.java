@@ -68,13 +68,13 @@ class ShoppingCart {
 
     /*
      * Helper method to apply a coupon to the cart.
-     * If the coupon is "IND10", a discount of 10% is applied to the total amount.
+     * If the coupon is "Geeta20", a discount of 20% is applied to the total amount.
      * The total amount is updated accordingly after applying the discount.
      */
     public void applyCoupon(String coupon) {
         this.coupon = coupon;
-        if (coupon.equals("IND10")) {
-            this.discount = this.getTotalAmount() * (0.1);
+        if (coupon.equals("Geeta20")) {
+            this.discount = this.getTotalAmount() * (0.2);
             this.totalAmount = this.totalAmount - this.discount;
         } else {
             this.totalAmount = this.totalAmount;
@@ -83,10 +83,10 @@ class ShoppingCart {
 
     /*
      * Helper method to calculate the payable amount.
-     * This method calculates the tax (14% of the total amount) and adds it to the total amount.
+     * This method calculates the tax (15% of the total amount) and adds it to the total amount.
      */
     public double getPayableAmount() {
-        this.tax = this.totalAmount * (0.14);
+        this.tax = this.totalAmount * (0.15);
         this.payableAmount = this.totalAmount + this.tax;
         return this.payableAmount;
     }
