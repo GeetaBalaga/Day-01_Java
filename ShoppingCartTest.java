@@ -106,15 +106,15 @@ public class ShoppingCartTest {
         System.out.println("Payable Amount: $" + payableAmount);
 
         /* apply a coupon code */
-        cart.applyCoupon("IND50");
+        cart.applyCoupon("Geeta20");
 
         cart.printInvoice();
 
-        cart.applyCoupon("IND10");
+        cart.applyCoupon("Geeta10");
 
         cart.printInvoice();
 
-        cart.addToCart(new Item("Milk", 5, 30.00));
+        cart.addToCart(new Item("Sugar", 5, 60));
 
         cart.printInvoice();
     }
