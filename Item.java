@@ -1,11 +1,7 @@
-import java.util.*;
-
 class Item {
-
 	private String productName;
 	private int quantity;
 	private double unitPrice;
-
 	/*
 	 * 1. Implement the constructor
 	 */
@@ -14,20 +10,17 @@ class Item {
 		this.quantity = quantity;
 		this.unitPrice = unitPrice;
 	}
-
 	public String toString() {
 		String s = this.productName + ":";
 		s = s + this.quantity + "\n";
 		return s;
 	}
-
 	/*
 	 * 2. Implement this method
 	 */
 	public String getProductName() {
 		return this.productName;
 	}
-
 	/*
 	 * 3. Implement this method
 	 */
